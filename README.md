@@ -33,5 +33,5 @@ fem/
 ├── inputParams_add.csv               #a csv file with additionally on run-time computed values such as forces
 ├── analysis.py                       #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
 ├── errMeasure.txt                    #error-measure value to inspect convergence 
-└──pdf's and png's                   #graphical output from analysis.py for sanity checks
+└── pdf's and png's                   #graphical output from analysis.py for sanity checks
 ```
