@@ -6,7 +6,7 @@ Implementation of the Finite Element Scheme for the publication
 
 
 
-Mihali, K., Wörthmüller, D. & Sens, P. **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
+K. Mihali, D. Wörthmüller & P. Sens, **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
 
 
 
