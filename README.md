@@ -4,11 +4,7 @@
 
 Implementation of the Finite Element Scheme for the publication 
 
-
-
 K. Mihali, D. Wörthmüller & P. Sens, **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
-
-
 
 The simulations used to obtain the results in the publication are based on the open source finite element package [FEniCS](https://fenicsproject.org) and are implemented in python. 
 
@@ -37,5 +33,5 @@ fem/
 ├── inputParams_add.csv               #a csv file with additionally on run-time computed values such as forces
 ├── analysis.py                       #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
 ├── errMeasure.txt                    #error-measure value to inspect convergence 
-├── pdf's and png's                   #graphical output from analysis.py for sanity checks
+└──pdf's and png's                   #graphical output from analysis.py for sanity checks
 ```
