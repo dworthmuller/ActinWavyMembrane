@@ -4,7 +4,11 @@
 
 Implementation of the Finite Element Scheme for the publication 
 
-K. Mihali, D. Wörthmüller, and P. Sens, **Test**, arXiv:2510.17701 (2025) https://doi.org/10.48550/arXiv.2510.17701
+
+
+Mihali, K., Wörthmüller, D. & Sens, P. **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
+
+
 
 The simulations used to obtain the results in the publication are based on the open source finite element package [FEniCS](https://fenicsproject.org) and are implemented in python. 
 
