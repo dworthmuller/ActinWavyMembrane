@@ -6,7 +6,7 @@ Implementation of the Finite Element Scheme for the publications
 
 1. K. Mihali*, D. Wörthmüller* & P. Sens, **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
 
-2. K. Mihali, D. Wörthmüller & P. Sens, **# Mechanical stress induced by the polymerisation of an active gel near a surface**. arXiv (2026) [10.48550/arXiv.2603.21919](https://doi.org/10.48550/arXiv.2603.21919)
+2. K. Mihali, D. Wörthmüller & P. Sens, **Mechanical stress induced by the polymerisation of an active gel near a surface**. arXiv (2026) [10.48550/arXiv.2603.21919](https://doi.org/10.48550/arXiv.2603.21919)
 
 The simulations used to obtain the results in the publication are based on the open source finite element package [FEniCS](https://fenicsproject.org) and are implemented in python. 
 
@@ -25,7 +25,6 @@ conda env create -f FILENAME.yml
 ```
 
 In the following we shortly summarize the main files, some of which are generated during simulations. More details of the implementation can be found in the supplemental text of the publications. 
-
 
 ```text
 fem/                                  #simulations for 1. publication-- Incompressible flow 
@@ -56,5 +55,4 @@ fem_compressible/                     #simulations for 2. p
     ├── analysis.py                   #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
     ├── errMeasure.txt                #error-measure value to inspect convergence 
     └── pdf's and png's               #graphical output from analysis.py for sanity checks
-
 ```
