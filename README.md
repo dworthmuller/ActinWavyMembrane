@@ -2,9 +2,11 @@
 
 <h3 align="center">-- Finite Element Code -- </h1>
 
-Implementation of the Finite Element Scheme for the publication 
+Implementation of the Finite Element Scheme for the publications 
 
-K. Mihali, D. Wörthmüller & P. Sens, **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
+1. K. Mihali*, D. Wörthmüller* & P. Sens, **Curvature instability of an active gel growing on a wavy membrane**. arXiv (2025) [10.48550/arXiv.2510.17701](https://doi.org/10.48550/arXiv.2510.17701)
+
+2. K. Mihali, D. Wörthmüller & P. Sens, **# Mechanical stress induced by the polymerisation of an active gel near a surface**. arXiv (2026) [10.48550/arXiv.2603.21919](https://doi.org/10.48550/arXiv.2603.21919)
 
 The simulations used to obtain the results in the publication are based on the open source finite element package [FEniCS](https://fenicsproject.org) and are implemented in python. 
 
@@ -22,10 +24,11 @@ To create the envirnoment run
 conda env create -f FILENAME.yml
 ```
 
-In the following we shortly summarize the main files. More details of the implementation can be found in the supplemental text of the publication. 
+In the following we shortly summarize the main files, some of which are generated during simulations. More details of the implementation can be found in the supplemental text of the publications. 
+
 
 ```text
-fem/
+fem/                                  #simulations for 1. publication-- Incompressible flow 
 ├── fem_main.py                       #python file to solve the PDE problem
 ├── inputParams.csv                   #parameter csv
 ├── Data/                             #simulation output -> xdmf, pvd, vtu and npz files
@@ -34,4 +37,24 @@ fem/
 ├── analysis.py                       #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
 ├── errMeasure.txt                    #error-measure value to inspect convergence 
 └── pdf's and png's                   #graphical output from analysis.py for sanity checks
+
+fem_compressible/                     #simulations for 2. publication-- Compressible flow 
+├── P_variable/                       #simulations with pressure p treated as unknown
+    ├── fem_main_compressible_p.py    #python file to solve the PDE problem 
+    ├── inputParams.csv               #parameter csv
+    ├── Data/                         #simulation output -> xdmf, pvd, vtu and npz files
+    ├── inputParams_add.csv           #a csv file with additionally on run-time computed values such as forces
+    ├── analysis.py                   #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
+    ├── errMeasure.txt                #error-measure value to inspect convergence 
+    └── pdf's and png's               #graphical output from analysis.py for sanity checks
+
+└── Rho_variable/                     #simulations with density rho treated as unknown
+    ├── fem_main_compressible_p.py    #python file to solve the PDE problem 
+    ├── inputParams.csv               #parameter csv
+    ├── Data/                         #simulation output -> xdmf, pvd, vtu and npz files
+    ├── inputParams_add.csv           #a csv file with additionally on run-time computed values such as forces
+    ├── analysis.py                   #python file to determine stress values on membrane surface -> written to inputParams_add.csv, visual checkups to ensure global force balance 
+    ├── errMeasure.txt                #error-measure value to inspect convergence 
+    └── pdf's and png's               #graphical output from analysis.py for sanity checks
+
 ```

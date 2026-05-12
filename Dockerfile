@@ -15,5 +15,6 @@ RUN pip3 install progressbar
 RUN pip3 install meshio
 RUN pip3 install gmsh
 RUN pip3 install pygmsh
+RUN pip3 install pandas
 
   

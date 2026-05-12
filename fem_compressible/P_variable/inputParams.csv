@@ -1,0 +1,2 @@
+dt,c,eta,gridsize,K,n,lmda,amp,vp,alpha,CDLX,CDLY,delta,q,D,xi,chi,zeta,rho_target,rho_in
+0.1,0.2,1,0.05,1,5,2.0,0.01,1,0,10,1.0,1.0,3.141592653589793,0.1,1,100,0,1,1
